@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    grid-template-rows: repeat(3, 180px);
+    gap: 10px;
+
+    align-items: center;
+    justify-items: center;
+
+    /* ...or use the shorthand for align + justify: */
+    /* place-items: center; */
+    
+    align-content: center;
+    justify-content: center;
+    
+    /* ...or use the shorthand for align + justify: */
+    /* place-content: center; */
+
+    width: 80vw;
+    height: 80vh;
+    background-color: rgb(131, 166, 177);
+    margin: 80px auto;
+}
+.item {
+    background-color: #ddd;
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+    border: 4px solid rgb(119, 119, 119);
+    
+    text-align: center;
+    line-height: 3.5;
+}
+.item1 {
+    align-self: end;
+    justify-self: end;
+}
+.item9 {
+    align-self: start;
+    justify-self: start;
+}
+.item3 {
+    align-self: start;
+    justify-self: end;
+}
+.item7 {
+    align-self: end;
+    justify-self: start;
+}
+/* .item2 {
+    align-self: center;
+    justify-self: end;
+}
+.item8 {
+    align-self: center;
+    justify-self: start;
+} */
+.item4 {
+    align-self: end;
+    justify-self: center;
+}
+.item6 {
+    align-self: start;
+    justify-self: center;
+}
